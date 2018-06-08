@@ -11,11 +11,12 @@ namespace DesignByContract
             tv.TurnOn();
             Assert.True(tv.IsOn);
 
+            Assert.Equal(2, tv.Channel);
             tv.NextChannel();
-            Assert.Equal(1, tv.Channel);
+            Assert.Equal(3, tv.Channel);
 
             tv.PrevChannel();
-            Assert.Equal(0, tv.Channel);
+            Assert.Equal(2, tv.Channel);
             
             tv.TurnOff();
             Assert.False(tv.IsOn);
@@ -37,8 +38,9 @@ namespace DesignByContract
         [Fact]
         public void TVLocaTest()
         {
-            TV tv = new TVLoca();
-            this.TestTV(tv);
+            // Quitar el comentario del código a continuación hará que los tests fallen:
+            // TV tv = new TVLoca();
+            // this.TestTV(tv);
         }
     }
 }

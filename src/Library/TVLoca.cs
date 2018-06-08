@@ -6,9 +6,9 @@ using System.Diagnostics;
 namespace DesignByContract
 {
     /// <summary>
-    /// Una TV marca Samsung.
+    /// Una TV que no funciona como debe.
     /// </summary>
-    public class TVSamsung : TV
+    public class TVLoca : TV
     {
         private Int32 _channel;
         /// <summary>
@@ -25,7 +25,7 @@ namespace DesignByContract
                 /* Precondiciones */
                 Debug.Assert(IsOn, "La televisión debe estar encendida para saber el canal.");
 
-                return _channel;
+                return new Random().Next(1, 999);
             }
         }
 
@@ -43,6 +43,17 @@ namespace DesignByContract
             }
         }
 
+        public TVLoca()
+        {
+            this._channel = 2;
+
+            /* Postcondiciones */
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
+
+        }
+
         /// <summary>
         /// Pasa al siguiente canal.
         /// </summary>
@@ -54,13 +65,19 @@ namespace DesignByContract
         {
             Int32 oldChannel = Channel;
             
-            /* Precondición */
+            /* Precondiciones */
             Debug.Assert(IsOn, "La televisión debe estar encendida para cambiar de canal.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
 
-            _channel = _channel + 1;
+            _channel = new Random().Next(1, 999);
 
-            /* Postcondición */
+            /* Postcondiciones */
             Debug.Assert(Channel == oldChannel + 1, "El canal debe aumentar en uno al pasar al canal siguiente.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
         }
 
         /// <summary>
@@ -73,13 +90,19 @@ namespace DesignByContract
         public override void PrevChannel()
         {
             Int32 oldChannel = Channel;
-            /* Precondición */
+            /* Precondiciones */
             Debug.Assert(IsOn, "La televisión debe estar encendida para cambiar de canal.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
 
-            _channel = _channel - 1;
+            _channel = new Random().Next(1, 999);
 
-            /* Postcondición */
+            /* Postcondiciones */
             Debug.Assert(Channel == oldChannel - 1, "El canal debe bajar en uno al pasar al canal anterior.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
         }
 
         /// <summary>
@@ -91,13 +114,19 @@ namespace DesignByContract
         /// </remarks>
         public override void TurnOn()
         {
-            /* Precondición */
+            /* Precondiciones */
             Debug.Assert(!this.IsOn, "La televisión debe estar apagada para ser encendida.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
 
             _isOn = true;
 
-            /* Postcondición */
+            /* Postcondiciones */
             Debug.Assert(this.IsOn, "La televisión queda encendida.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
         }
 
         /// <summary>
@@ -109,13 +138,20 @@ namespace DesignByContract
         /// </remarks>
         public override void TurnOff()
         {
-            /* Precondición */
+            /* Precondiciones */
             Debug.Assert(this.IsOn, "La televisión debe estar prendida para ser apagada.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
 
             _isOn = false;
 
-            /* Postcondición */
+            /* Postcondiciones */
             Debug.Assert(!this.IsOn, "La televisión queda apagada.");
+            Debug.Assert(
+                this.Channel >= 2 && this.Channel <= 999,
+                "El canal está entre 2 y 999");
+            
         }
     }
 }
