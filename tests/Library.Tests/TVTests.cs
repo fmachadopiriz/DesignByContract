@@ -38,7 +38,7 @@ namespace DesignByContract
         [Fact]
         public void TVLocaTest()
         {
-            // Quitar el comentario del código a continuación hará que los tests fallen:
+            // Quitar los comentarios de las siguientes líneas de código hará que los tests fallen:
             // TV tv = new TVLoca();
             // this.TestTV(tv);
         }

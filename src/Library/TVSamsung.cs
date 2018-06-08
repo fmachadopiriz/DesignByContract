@@ -90,7 +90,8 @@ namespace DesignByContract
         public override void PrevChannel()
         {
             Int32 oldChannel = Channel;
-            /* Precondiciones */
+
+  	        /* Precondiciones */
             Debug.Assert(IsOn, "La televisión debe estar encendida para cambiar de canal.");
             Debug.Assert(
                 this.Channel >= 2 && this.Channel <= 999,
@@ -103,7 +104,7 @@ namespace DesignByContract
             Debug.Assert(
                 this.Channel >= 2 && this.Channel <= 999,
                 "El canal está entre 2 y 999");
-}
+        }
 
         /// <summary>
         /// Enciende la televisión.

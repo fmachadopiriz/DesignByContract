@@ -150,8 +150,7 @@ namespace DesignByContract
             Debug.Assert(!this.IsOn, "La televisión queda apagada.");
             Debug.Assert(
                 this.Channel >= 2 && this.Channel <= 999,
-                "El canal está entre 2 y 999");
-            
+                "El canal está entre 2 y 999");           
         }
     }
 }
