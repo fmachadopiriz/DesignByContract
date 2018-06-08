@@ -6,7 +6,7 @@ namespace DesignByContract
     {
         static void Main(string[] args)
         {
-            TVSamsung tv = new TVSamsung();
+            AcmeTV tv = new AcmeTV();
 
             Console.WriteLine(tv.IsOn);
             tv.NextChannel();

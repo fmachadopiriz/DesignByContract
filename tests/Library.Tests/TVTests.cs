@@ -23,12 +23,12 @@ namespace DesignByContract
         }
         
         /// <summary>
-        /// Prueba una TVSamsung.
+        /// Prueba una AcmeTV.
         /// </summary>
         [Fact]
-        public void TVSamsungTest()
+        public void AcmeTVTest()
         {
-            TV tv = new TVSamsung();
+            TV tv = new AcmeTV();
             this.TestTV(tv);
         }
 
