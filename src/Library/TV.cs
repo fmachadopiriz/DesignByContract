@@ -13,6 +13,7 @@ namespace DesignByContract
         /// <returns>El número del canal.</returns>
         /// <remarks>
         /// <c>Precondición</c> La televisión debe estar encendida para saber el canal.
+        /// <c>Invariante</c> El canal está entre 2 y 999.
         /// </remarks>
         public abstract Int32 Channel { get; }
 
