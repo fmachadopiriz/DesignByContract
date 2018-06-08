@@ -6,9 +6,9 @@ using System.Diagnostics;
 namespace DesignByContract
 {
     /// <summary>
-    /// Una TV marca Samsung.
+    /// Una TV marca Acme.
     /// </summary>
-    public class TVSamsung : TV
+    public class AcmeTV : TV
     {
         private Int32 _channel;
         /// <summary>
@@ -31,7 +31,7 @@ namespace DesignByContract
         /// <summary>
         /// Indica si la televisión está prendida o no.
         /// </summary>
-        /// <returns>True si la televisión está prendida; False en caso contrario.</returns>
+        /// <returns><c>true</c> si la televisión está prendida; <c>false</c> en caso contrario.</returns>
         public override Boolean IsOn
         {
             get
@@ -41,9 +41,9 @@ namespace DesignByContract
         }
 
         /// <summary>
-        /// Crea una nueva <see ref="TVSamsung">.
+        /// Crea una nueva <see ref="AcmeTV">.
         /// </summary>
-        public TVSamsung()
+        public AcmeTV()
         {
             this._channel = 2;
             this._isOn = false;
