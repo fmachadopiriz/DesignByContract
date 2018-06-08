@@ -7,11 +7,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C68F827F-2CC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "src\Program\Program.csproj", "{C053BF23-5346-44A7-918D-36411FB97CDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVs", "src\TVs\TVs.csproj", "{613BD405-1109-4DFA-B33E-35DAF53B52D3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVs", "src\Library\Library.csproj", "{613BD405-1109-4DFA-B33E-35DAF53B52D3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{3BEF0833-7235-4992-B07C-1F8EE3CACBC1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TVs.Tests", "tests\TVs.Tests\TVs.Tests.csproj", "{DE02573B-FC61-4F5A-BB39-DBD013D1D4E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Tests", "tests\Library.Tests\Library.Tests.csproj", "{DE02573B-FC61-4F5A-BB39-DBD013D1D4E7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
