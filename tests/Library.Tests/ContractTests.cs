@@ -1,8 +1,8 @@
-//--------------------------------------------------------------------------------
-// <copyright file="ContractsTests.cs" company="Universidad Católica del Uruguay">
+//-------------------------------------------------------------------------------
+// <copyright file="ContractTests.cs" company="Universidad Católica del Uruguay">
 //     Copyright (c) Programación II. Derechos reservados.
 // </copyright>
-//--------------------------------------------------------------------------------
+//-------------------------------------------------------------------------------
 
 namespace DesignByContract.Tests
 {
