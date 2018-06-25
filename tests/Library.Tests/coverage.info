@@ -1,0 +1,155 @@
+SF:C:\Users\Fernando\OneDrive\Documents\Source\Repos\DesignByContract\src\Library\Actor.cs
+FN:40,System.String DesignByContract.Actor::get_Name()
+FNDA:4,System.String DesignByContract.Actor::get_Name()
+DA:41,4
+DA:42,4
+DA:43,4
+FN:54,System.Int32 DesignByContract.Actor::get_Likes()
+FNDA:26,System.Int32 DesignByContract.Actor::get_Likes()
+DA:55,26
+DA:56,26
+DA:57,26
+FN:63,System.Void DesignByContract.Actor::Like()
+FNDA:2,System.Void DesignByContract.Actor::Like()
+DA:64,2
+DA:65,2
+DA:66,2
+DA:68,2
+DA:70,2
+DA:71,2
+DA:72,2
+FN:77,System.Void DesignByContract.Actor::Unlike()
+FNDA:2,System.Void DesignByContract.Actor::Unlike()
+DA:78,2
+DA:79,2
+DA:80,2
+DA:82,2
+DA:83,1
+DA:84,1
+DA:85,1
+DA:87,2
+DA:88,2
+DA:89,2
+BRDA:82,47,0,1
+BRDA:82,47,1,3
+BRDA:87,72,0,1
+BRDA:87,72,1,1
+LF:23
+LH:23
+BRF:4
+BRH:4
+FNF:4
+FNH:4
+end_of_record
+SF:C:\Users\Fernando\OneDrive\Documents\Source\Repos\DesignByContract\src\Library\Contract.cs
+FN:33,System.Void DesignByContract.Contract::Check(System.Boolean,System.String)
+FNDA:84,System.Void DesignByContract.Contract::Check(System.Boolean,System.String)
+DA:34,84
+DA:35,84
+DA:36,3
+DA:37,3
+DA:39,81
+BRDA:35,7,0,7
+BRDA:35,7,1,2147483647
+FN:46,System.Void DesignByContract.Contract::Check(System.Boolean)
+FNDA:6,System.Void DesignByContract.Contract::Check(System.Boolean)
+DA:47,6
+FN:54,System.Void DesignByContract.Contract::Requires(System.Boolean)
+FNDA:2,System.Void DesignByContract.Contract::Requires(System.Boolean)
+DA:55,2
+FN:62,System.Void DesignByContract.Contract::Requires(System.Boolean,System.String)
+FNDA:12,System.Void DesignByContract.Contract::Requires(System.Boolean,System.String)
+DA:63,12
+FN:69,System.Void DesignByContract.Contract::Ensures(System.Boolean)
+FNDA:2,System.Void DesignByContract.Contract::Ensures(System.Boolean)
+DA:70,2
+FN:77,System.Void DesignByContract.Contract::Ensures(System.Boolean,System.String)
+FNDA:26,System.Void DesignByContract.Contract::Ensures(System.Boolean,System.String)
+DA:78,26
+LF:10
+LH:10
+BRF:2
+BRH:2
+FNF:6
+FNH:6
+end_of_record
+SF:C:\Users\Fernando\OneDrive\Documents\Source\Repos\DesignByContract\src\Library\LikesTracker.cs
+FN:26,System.Int32 DesignByContract.LikesTracker::get_Likes()
+FNDA:100,System.Int32 DesignByContract.LikesTracker::get_Likes()
+DA:27,100
+DA:28,100
+DA:29,100
+FN:35,System.Void DesignByContract.LikesTracker::Add()
+FNDA:6,System.Void DesignByContract.LikesTracker::Add()
+DA:36,6
+DA:37,6
+DA:38,6
+DA:40,6
+DA:42,6
+DA:43,6
+DA:44,6
+FN:49,System.Void DesignByContract.LikesTracker::Remove()
+FNDA:3,System.Void DesignByContract.LikesTracker::Remove()
+DA:50,3
+DA:51,3
+DA:52,3
+DA:53,3
+DA:55,3
+DA:57,3
+DA:58,3
+DA:59,3
+LF:18
+LH:18
+BRF:0
+BRH:0
+FNF:3
+FNH:3
+end_of_record
+SF:C:\Users\Fernando\OneDrive\Documents\Source\Repos\DesignByContract\src\Library\Song.cs
+FN:47,System.String DesignByContract.Song::get_Name()
+FNDA:4,System.String DesignByContract.Song::get_Name()
+DA:48,4
+DA:49,4
+DA:50,4
+FN:59,System.String DesignByContract.Song::get_Artist()
+FNDA:4,System.String DesignByContract.Song::get_Artist()
+DA:60,4
+DA:61,4
+DA:62,4
+FN:72,System.Int32 DesignByContract.Song::get_Likes()
+FNDA:26,System.Int32 DesignByContract.Song::get_Likes()
+DA:73,26
+DA:74,26
+DA:75,26
+FN:81,System.Void DesignByContract.Song::Like()
+FNDA:2,System.Void DesignByContract.Song::Like()
+DA:82,2
+DA:83,2
+DA:84,2
+DA:86,2
+DA:88,2
+DA:89,2
+DA:90,2
+FN:95,System.Void DesignByContract.Song::Unlike()
+FNDA:2,System.Void DesignByContract.Song::Unlike()
+DA:96,2
+DA:97,2
+DA:98,2
+DA:100,2
+DA:101,1
+DA:102,1
+DA:103,1
+DA:105,2
+DA:106,2
+DA:107,2
+BRDA:100,47,0,1
+BRDA:100,47,1,3
+BRDA:105,72,0,1
+BRDA:105,72,1,1
+LF:26
+LH:26
+BRF:4
+BRH:4
+FNF:5
+FNH:5
+end_of_record
